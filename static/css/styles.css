@@ -1,0 +1,15 @@
+.bg-dark-green { background-color: #013220; }
+    .footer-link { transition: color 0.3s ease; text-decoration: none; }
+    .footer-link:hover { color: #a4c639 !important; }
+    .light-hr { border-top: 1px solid rgba(255, 255, 255, 0.1); }
+   
+    /* Ensures icon stays at the top of multi-line text */
+    .address-container {
+        display: flex;
+        align-items: flex-start;
+    }
+    .address-icon {
+        margin-top: 4px; /* Adjusts icon to align with the first line of text */
+        width: 25px;
+        flex-shrink: 0;
+    }
