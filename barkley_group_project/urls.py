@@ -17,9 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
+from barkley_group_site import views as index_views
 
 urlpatterns = [
+    
+    path('', index_views.home, name='home'),
     path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path("accounts/", include("allauth.urls")),
+    path('our_services/', index_views.our_services, name='our_services'),
+    path('request_meeting/', index_views.request_meeting, name='request_meeting'),
+    path('pay_invoice/', index_views.pay_invoice, name='pay_invoice'),
 ]
