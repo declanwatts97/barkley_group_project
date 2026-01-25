@@ -1,3 +1,51 @@
 {# templates/home.html #}
 {% extends "base.html" %}
 {% load static %}
+
+{% block title %} Our Services | Barkley Group {% endblock %}
+
+{% block content %}
+
+<div class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/2">
+                <img src="/static/images/pt-img.png" alt="Section 1 Image" class="rounded-lg shadow-lg w-full h-auto object-cover">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4 text-emerald-600">Personal Tax</h2>
+                <p class="text-lg leading-relaxed text-gray-600">
+                    The services we offer for individuals focus on tax advice including tax advice and planning including preparation of self-assessment returns, tax enquiries, inheritance tax and tax returns.
+
+We want to spare you the worry and stress and free up your valuable time by offering a comprehensive individual self-assessment service which includes everything from calculating your tax liability, liaising with the tax office and other financial institutions, to completing and filing your returns.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/2">
+                <img src="/static/images/ct-img.png" alt="Section 2 Image" class="rounded-lg shadow-lg w-full h-auto object-cover">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4 text-emerald-600">Corporation Tax</h2>
+                <p class="text-lg leading-relaxed text-gray-600">
+                    We understand that each business is different. We provide tax advice and support to assist you in optimising your tax positions and ensure you meet the necessary compliance requirements. We have a team of experienced corporate tax specialists who can handle all aspects of tax planning. Trust our team of experts to offer expert tax advice and minimise tax liabilities.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/2">
+                <img src="/static/images/payroll-img.png" alt="Section 3 Image" class="rounded-lg shadow-lg w-full h-auto object-cover">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4 text-emerald-600">Payroll Services</h2>
+                <p class="text-lg leading-relaxed text-gray-600">
+                    Our team of professionals can provide you with comprehensive payroll services that are tailored around your business. You can be confident knowing that we are committed to providing you with a professional service at all times. We understand that administering your payroll can be time consuming. That’s why our team can provide you with confidential and effective payroll services to help take the administrative burden off you. Whatever the size of your business, we can make payroll processing easy and stress-free.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    {% endblock %}
