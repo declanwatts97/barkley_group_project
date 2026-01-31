@@ -27,4 +27,5 @@ urlpatterns = [
     path('our_services/', index_views.our_services, name='our_services'),
     path('request_meeting/', index_views.request_meeting, name='request_meeting'),
     path('my_account/', index_views.my_account, name='my_account'),
+    path('meeting_request_success', index_views.meeting_request_success, name='meeting_request_success'),
 ]
