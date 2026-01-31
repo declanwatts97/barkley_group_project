@@ -26,5 +26,5 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('our_services/', index_views.our_services, name='our_services'),
     path('request_meeting/', index_views.request_meeting, name='request_meeting'),
-    path('pay_invoice/', index_views.pay_invoice, name='pay_invoice'),
+    path('my_account/', index_views.my_account, name='my_account'),
 ]

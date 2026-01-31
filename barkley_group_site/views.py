@@ -11,6 +11,6 @@ def our_services(request):
 def request_meeting(request):
     return render(request, "request_meeting.html")
 
-def pay_invoice(request):
-    return render(request, "pay_invoice.html")
+def my_account(request):
+    return render(request, "my_account.html")
 
