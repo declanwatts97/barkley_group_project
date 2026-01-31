@@ -42,7 +42,7 @@
                     <a href="{% url 'home' %}" class="px-3 py-2 rounded-md text-sm font-medium text-green-50 hover:bg-black/20 hover:text-white transition duration-300">Home</a>
                     <a href="{% url 'our_services' %}" class="px-3 py-2 rounded-md text-sm font-medium text-green-50 hover:bg-black/20 hover:text-white transition duration-300">Our Services</a>
                      
-                        {# Request Meeting (Authenticated Users Only) #}
+                        {# Request Meeting#}
                         <a href="{% url 'request_meeting' %}" class="px-3 py-2 rounded-md text-sm font-medium text-green-50 hover:bg-black/20 hover:text-white transition duration-300">
                             Request a Meeting
                         </a>
@@ -87,11 +87,10 @@
                 
                 
                 {# CONDITIONAL MOBILE LINKS INSIDE MENU #}
-                {% if user.is_authenticated %}
-                    {# Request a Meeting #}
-                    <a href="{% url 'request_meeting' %}" class="block px-3 py-2 rounded-md text-base font-medium text-green-50 hover:bg-black/20 hover:text-white transition duration-300">
+                <a href="{% url 'request_meeting' %}" class="block px-3 py-2 rounded-md text-base font-medium text-green-50 hover:bg-black/20 hover:text-white transition duration-300">
                         Request a Meeting
                     </a>
+                {% if user.is_authenticated %}
                     {# My Account #}
                     <a href="{% url 'my_account' %}" class="block px-3 py-2 rounded-md text-base font-medium text-green-50 hover:bg-black/20 hover:text-white transition duration-300">
                         My Account
