@@ -1,0 +1,1 @@
+web: gunicorn barkley_group_project.wsgi
