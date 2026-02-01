@@ -1,6 +1,7 @@
 from django import forms
 from .models import MeetingRequest
 
+
 class MeetingRequestForm(forms.ModelForm):
     
     class Meta:
@@ -15,3 +16,4 @@ class MeetingRequestForm(forms.ModelForm):
             'meeting_time': 'Date and Time',
             'new_client': 'Are you a new client?',
         }
+

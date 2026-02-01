@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'barkley_group_site',
+    'my_account',
     'crispy_forms',
     'crispy_tailwind',
 ]

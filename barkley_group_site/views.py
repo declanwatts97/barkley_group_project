@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect   
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
 from .forms import MeetingRequestForm
+
 
 # Create your views here.
 
@@ -49,3 +50,4 @@ def request_meeting(request):
 
 def meeting_request_success(request):
     return render(request, "meeting_request_success.html")
+
