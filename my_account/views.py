@@ -32,3 +32,7 @@ def my_account_view(request):
         'services': services,
         'form': form
     })
+
+@login_required
+def checkout_view(request):
+    return render(request, 'checkout.html')

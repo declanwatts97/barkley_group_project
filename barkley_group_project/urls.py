@@ -29,4 +29,5 @@ urlpatterns = [
     path('request_meeting/', index_views.request_meeting, name='request_meeting'),
     path('my_account/', my_account_views.my_account_view, name='my_account'),
     path('meeting_request_success', index_views.meeting_request_success, name='meeting_request_success'),
+    path('checkout/', my_account_views.checkout_view, name='checkout'),
 ]
