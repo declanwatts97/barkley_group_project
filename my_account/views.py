@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from .models import Service
 from .forms import ServiceForm
+import stripe
 
 def my_account(request):
     return render(request, "my_account.html")
@@ -33,6 +35,15 @@ def my_account_view(request):
         'form': form
     })
 
+stripe.api_key = settings.STRIPE_SECRET_KEY
+
 @login_required
 def checkout_view(request):
-    return render(request, 'checkout.html')
+    intent = stripe.PaymentIntent.create(
+        amount=15000,
+        currency='gbp',
+    )
+    return render(request, 'checkout.html', {
+        'client_secret': intent.client_secret,
+        'publishable_key': settings.STRIPE_PUBLISHABLE_KEY 
+    })

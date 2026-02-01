@@ -17,3 +17,4 @@ const mobileMenuButton = document.getElementById('mobile-menu-button');
             const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
             mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
         });
+
