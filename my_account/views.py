@@ -47,3 +47,11 @@ def checkout_view(request):
         'client_secret': intent.client_secret,
         'publishable_key': settings.STRIPE_PUBLISHABLE_KEY 
     })
+
+
+@login_required
+def payment_success_view(request):
+    payment_intent_id = request.GET.get('payment_intent', '')
+    return render(request, 'payment_success.html', {
+        'payment_intent_id': payment_intent_id
+    })
