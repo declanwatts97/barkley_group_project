@@ -1,3 +1,47 @@
-{# templates/home.html #}
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
+
+{% block title %}Home | Barkley Group {% endblock %}
+
+{% block content %}
+    
+
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-brand-900 mb-4">Our Expertise</h2>
+                <p class="text-slate-600">Comprehensive financial solutions designed to minimize liability and maximize profitability.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-accent/50 hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-brand-accent group-hover:text-white transition">
+                        <i class="fas fa-file-invoice-dollar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Personal Tax</h3>
+                    <p class="text-slate-600 mb-4">Minimize your tax liability with our strategic planning for individuals.</p>
+                    <a href="#" class="text-brand-accent font-semibold flex items-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-accent/50 hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6 group-hover:bg-brand-accent group-hover:text-white transition">
+                        <i class="fas fa-search-dollar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Corporation Tax</h3>
+                    <p class="text-slate-600 mb-4">Tax planning and company accounts to ensure your declarations are compliant and accurate.</p>
+                    <a href="#" class="text-brand-accent font-semibold flex items-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-accent/50 hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-6 group-hover:bg-brand-accent group-hover:text-white transition">
+                        <i class="fas fa-calculator text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Payroll</h3>
+                    <p class="text-slate-600 mb-4">Accurate, timely, weekly and monthly payroll services to keep your finances organized.</p>
+                    <a href="#" class="text-brand-accent font-semibold flex items-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
