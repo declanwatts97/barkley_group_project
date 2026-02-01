@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
 from barkley_group_site import views as index_views
+from my_account import views as my_account_views
 
 urlpatterns = [
     
@@ -26,6 +27,6 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('our_services/', index_views.our_services, name='our_services'),
     path('request_meeting/', index_views.request_meeting, name='request_meeting'),
-    path('my_account/', index_views.my_account, name='my_account'),
+    path('my_account/', my_account_views.my_account_view, name='my_account'),
     path('meeting_request_success', index_views.meeting_request_success, name='meeting_request_success'),
 ]

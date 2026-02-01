@@ -16,9 +16,6 @@ def our_services(request):
 def request_meeting(request):
     return render(request, "request_meeting.html")
 
-def my_account(request):
-    return render(request, "my_account.html")
-
 def request_meeting(request):
     if request.method == 'POST':
         form = MeetingRequestForm(request.POST)
