@@ -242,13 +242,82 @@ First you need to clone this repositories URL, by copying the HTTPS. You can the
 
 ### User Stories Testing
 
+1. As a user I require clear and easy navigation. I tested this by getting a friend to navigate around the site as a consumer and ensure it was simple.
 
+2. As a user I require the website to be responsive. This was tested through viewing the site on a variety of browsers as outlined below and also on different devices, which will be shown in manual tests.
+
+3. As a user I require the ability to request a meeting. This was tested by navigating to the page required and walking through it as if I was a user.
+
+4. As a user I require a My Account page, where I can add my services I need work done on. This was tested by navigating to the page required and walking through it as if I was a user.
+
+5. As a user I require a checkout page, so I can pay for my required services upfront and online. This was tested by navigating to the page required and walking through it as if I was a user.
+
+6. As a developer I require clean code which follows the standard for readability. This ensures any changes can be easily made and the code understood by other contributors. This was tested by running the code through various validators (results shown further below).
+
+7. As a developer I require a database model relevant to the project and entity relationship diagram to outline the reason for the model. This was tested through testing the features the models link to. The request meeting model works and sends the request info to the database, and the services when linked to the user account also show on the database.
+
+8. As a developer I require the site to be responsive on all devices and browsers, allowing the customer base the best possible experience when viewing the site. This was tested through viewing the site on a variety of browsers as outlined below and also on different devices, which will be shown in manual tests.
+
+9. As a developer I require a detailed Readme document which outlines the planning, development and deployment procedure. I tested this by asking a friend to read through and check they can follow the life cycle of this project.
+
+10. As a developer I require customers to be able to request meetings, and if authenticated through sign in be able to view, edit and delete services they have added to their accounts. I tested this by submitting the requests as an admin and making sure they link to the database correctly. I also tested the adding, removing and deleting services to make sure that the features work as required.
 
 ### Manual Testing
 
+1. Navigation - I tested the navigation by clicking the navbar links and ensuring that they redirected me to the correct webpages. I tested this on multiple devices. This worked as expected.
+
+2. Footer - I tested the footer by clicking each social media icon to ensure that these redirected me to the correct social media site.  I also tested the contact info which redirects mobile users to the valid form of contact (email/phone). This worked as expected. The links on were also tested to ensure that only authorised users could access the pay for a service page and if not authorised it would prompt them to log in.
+
+3. Webpage responsiveness - each webpage was tested across multiple screen sizes, to ensure that everything works as it should. I tested this mainly through chromes developer tools as well as my laptop and mobile phone. I have shown some screenshots below from the chrome developer tools for all web pages:
+
+![home on phone](static/readme-images/home-1-phone.png)
+![home on ipad](static/readme-images/home-ipad.png)
+![our services phone](static/readme-images/our-services-phone.png)
+![our services ipad](static/readme-images/ourservices-ipad.png)
+![request meeting phone](static/readme-images/request-meeting-phone.png)
+![request meeting ipad](static/readme-images/request-meeting-ipad.png)
+![sign in phone](static/readme-images/signin-phone.png)
+![sign in ipad](static/readme-images/login-ipad.png)
+![myaccount ipad](static/readme-images/myaccount-ipad.png)
+![myaccount phone](static/readme-images/myaccount-phone.png)
+![checkout phone](static/readme-images/checkout-phone.png)
+![checkout ipad](static/readme-images/checkout-ipad.png)
+
+4. Request a meeting - the request a meeting function was tested in 2 main ways:
+ - Through filling in the information on the form and submitting, ensuring that the information was accepted and returned the success page.
+
+ - Ensuring that this successful booking was sent through to the admin panel, with the request and all information submitted showing to the site owner.
+
+Screenshots for these points are below:
+
+![meeting request](static/readme-images/meeting-request-test.png)
+![meeting request success](static/readme-images/request-received-test.png)
+![admin test](static/readme-images/admin-test.png)
+
+5. HTML Validation - I ran my deployed site through a HTML validator and it returned no errors.
+
+Screenshots are below:
+
+![html home validation](static/readme-images/html-home.png)
+![html our services validation](static/readme-images/html-ourservices.png)
+![html meeting request validation](static/readme-images/html-meeting-request.png)
+![html my account validation](static/readme-images/html-my-account.png)
+![html checkout validation](static/readme-images/html-checkout.png)
+
+6. CSS Validation - I ran my deployed site through a CSS validator and it returned no errors.
+
+Screenshots are below:
+
+![css validation](static/readme-images/css-validation.png)
+
+7. JS Validation - I ran my deployed site through a JS validatior and it returned no errors.
+
+Screenshots are below:
+
+![js validation](static/readme-images/js-validation.png)
 
 
-9. Dev Tools - I checked my code through the console on chrome dev tools. One area to improve in the future is the that tailwind CCS needs to amended to a post CSS plugin or use the tailwind CLI for production. This will be fixed in future updates.
+8. Dev Tools - I checked my code through the console on chrome dev tools. One area to improve in the future is the that tailwind CCS needs to amended to a post CSS plugin or use the tailwind CLI for production. This will be fixed in future updates.
 
 ### Testing Summary
 
