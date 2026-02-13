@@ -44,7 +44,6 @@
             <form class="space-y-6" method="POST" action="{% url 'request_meeting' %}">
                 {% csrf_token %}
                 
-                
                 {{ form|crispy }}
 
                 <div>
