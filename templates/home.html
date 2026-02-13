@@ -5,15 +5,15 @@
 
 {% block content %}
     
-<div style="background-image: url('{% static 'images/hero-img/png' %}')" class="relative h-[75vh] bg-cover bg-center text-white flex flex-col items-center justify-center text-center">
+<div style="background-image: url('{% static 'images/hero-img.png' %}')" class="relative h-[65vh] bg-cover bg-center text-white flex flex-col items-center justify-center text-center">
     
     <div class="absolute inset-0 bg-black opacity-50"></div>
 
     <div class="relative z-10 p-4">
         <h1 class="text-4xl md:text-6xl font-bold logo-font text-yellow-50">Barkley Group</h1>
         <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto"></p>
-        <a href="{% url 'our_services' %}" class="mt-8 inline-block px-6 py-3 rounded-md text-lg font-medium text-white bg-green-600 hover:bg-green-700 transition duration-300 shadow-lg">
-            Our Services
+        <a href="{% url 'request_meeting' %}" class="mt-8 inline-block px-6 py-3 rounded-md text-lg font-medium text-white bg-green-600 hover:bg-green-700 transition duration-300 shadow-lg">
+            Request a meeting and become a client today!
         </a>
     </div>
 </div>
@@ -32,7 +32,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-brand-900 mb-3">Personal Tax</h3>
                     <p class="text-slate-600 mb-4">Minimize your tax liability with our strategic planning for individuals.</p>
-                    <a href="#" class="text-brand-accent font-semibold flex items-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    <a href="{% url 'our_services' %}" class="text-brand-accent font-semibold flex items-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
                 </div>
 
                 <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-accent/50 hover:shadow-xl transition duration-300">
@@ -41,7 +41,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-brand-900 mb-3">Corporation Tax</h3>
                     <p class="text-slate-600 mb-4">Tax planning and company accounts to ensure your declarations are compliant and accurate.</p>
-                    <a href="#" class="text-brand-accent font-semibold flex items-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    <a href="{% url 'our_services' %}" class="text-brand-accent font-semibold flex items-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
                 </div>
 
                 <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-accent/50 hover:shadow-xl transition duration-300">
@@ -50,7 +50,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-brand-900 mb-3">Payroll</h3>
                     <p class="text-slate-600 mb-4">Accurate, timely, weekly and monthly payroll services to keep your finances organized.</p>
-                    <a href="#" class="text-brand-accent font-semibold flex items-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    <a href="{% url 'our_services' %}" class="text-brand-accent font-semibold flex items-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
                 </div>
             </div>
         </div>
