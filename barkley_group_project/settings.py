@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
  
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-cbaqhvgegpjkrmdvua7yh0+nhf(7f$0jof5!65+yk7qde^$p^+')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 STRIPE_PUBLISHABLE_KEY = os.getenv('STRIPE_PUBLISHABLE_KEY')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 
