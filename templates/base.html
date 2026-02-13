@@ -154,7 +154,7 @@
                         {% if user.is_authenticated %}
                             <a href="{% url 'my_account' %}" class="block text-white transition-colors duration-300 hover:text-[#a4c639]">Pay for Service</a>
                         {% else %}
-                            <a href="{% url 'account_login' %}?next={% url 'my_account' %}" class="block text-white transition-colors duration-300 hover:text-[#a4c639]">Pay for Invoice</a>
+                            <a href="{% url 'account_login' %}?next={% url 'my_account' %}" class="block text-white transition-colors duration-300 hover:text-[#a4c639]">Pay for Service</a>
                         {% endif %}
                     </div>
                 </div>
